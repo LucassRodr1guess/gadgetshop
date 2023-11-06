@@ -6,7 +6,7 @@ function TextLinkExample2() {
   return (
     <Navbar className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="/"><i class="bi bi-pc-display"></i> 
+        <Navbar.Brand href="/"> 
             Gadget Shop
             </Navbar.Brand>
             

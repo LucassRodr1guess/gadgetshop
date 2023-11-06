@@ -23,3 +23,6 @@ a{
   .cor{
     background-color: #FC0120;
   }
+.bg-body-tertiary navbar navbar-expand navbar-light{
+  background-color:#FC0120 !important;
+}
