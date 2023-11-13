@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Navbar, Nav, Form, FormControl, Button, Container, Row, Col } from 'react-bootstrap';
+
 
 function FormularioCadastroProduto() {
   const [produto, setProduto] = useState({
@@ -24,7 +26,39 @@ function FormularioCadastroProduto() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div>
+          <Navbar bg="#FC0120" variant="dark" expand="lg">
+        <Container>
+          {/* Nome da loja na parte inferior esquerda */}
+          <Navbar.Brand className="mb-0 h1">
+            Gadget Shop
+          </Navbar.Brand>
+
+          {/* Imagem centralizada na parte superior */}
+          <Navbar.Brand className="mx-auto" >
+            <img style={{margin: '0 auto', marginLeft: '500px', marginBottom: '50px'}}
+              src="https://media.discordapp.net/attachments/1030129015371079690/1171094940487532585/4cc80605-1f55-4fea-91db-488cb9fc5707.jpeg?ex=655b6e27&is=6548f927&hm=c0772ae5e0f46e7c27afebd4ca6bbf971bc8a11c24689358250612a9671f29a2&=&width=300&height=300"
+              width="70"
+              height="70"
+              className="d-inline-block align-top"
+              alt="Logo"
+              
+            />
+          </Navbar.Brand>
+
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            {/* Opções de navegação na parte inferior direita */}
+            <Nav className="ml-auto" style={{ margin: '0 auto', paddingLeft: '300px' }} >
+              <Nav.Link href="/login">Login</Nav.Link>
+              <Nav.Link href="/cadastro">Cadastro Produtos</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+   
+      (
+    <form onSubmit={handleSubmit} style={{ textAlign: 'center' }}>
       <div>
         <label htmlFor="id_produtotendencia">ID do Produto Tendência:</label>
         <input
@@ -72,6 +106,7 @@ function FormularioCadastroProduto() {
       </div>
       <button type="submit">Cadastrar Produto</button>
     </form>
+    </div>
   );
 }
 

@@ -1,12 +1,12 @@
-import ConteudoHome from "../components/conteudoHome"
+import ConteudoHome from "../components/conteudoHome";
 
 
 function Home(){
     return(
         <div>
-            <header>
+            
             <ConteudoHome/>
-            </header>
+            
             
         </div>
     )
